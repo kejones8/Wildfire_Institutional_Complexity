@@ -15,6 +15,7 @@ incidents$FINAL_SQKM <- incidents$FINAL_ACRES * 0.004
 
 var_names<-c("FINAL_SQKM","ALLJUR_ENGAG_CNT","VALS_AT_RISK","NPL_DAYS_4_5")
 
+#make all colnames uppercase
 names(incidents)<-toupper(names(incidents))
 
 
@@ -22,12 +23,12 @@ incidents_subset<-incidents[,c("INCIDENT_ID","START_YEAR.X",var_names)]
 
 
 
-pop_samples<-c("all_inc")
 table_list<-list(incidents_subset)
 
-
+#create the dataframe we'll store all of the table values in 
 samp_var_slopes<-data.frame(matrix(NA, nrow = 5, ncol = 10))
 colnames(samp_var_slopes)<-c("n","variable","slope","mean_abs_error","mean","max","min","std_dev","slope_90CI_upper","slope_90CI_lower")
+#axes values & file names to iterate through
 figure<-c("fig2b_trendline","fig3b_trendline","fig4b_trendline","fig5b_trendline")
 yax_names<-c("Square Kilometers", "Engaged Jurisdictions","Number of Structures", "Days")
 
@@ -36,11 +37,10 @@ titles<-c("Trend of Average Final Square Kilometers : 1999-2020", "Trend of Enga
 
 
 count<-0
+#this first loop is a relic from older code structure
+#NOTE: incident_subset is just renamed to df
 for (i in 1:length(table_list)){
-  
-  #loop through all incidents, 25 or 75%
-  df<-table_list[[i]]
-  samp<-pop_samples[[i]]
+  df<-incidents_subset
   
   
   #step through the variables
@@ -163,7 +163,7 @@ for (i in 1:length(table_list)){
   
 }
 
-
+#handle incident counts separately - no averaging within yeras
 
 inc_counts_peryear<-incidents %>% group_by(START_YEAR.X) %>% summarise(n=n())
 num<-nrow(incidents)
@@ -172,7 +172,7 @@ n <- inc_counts_peryear[['n']]
 
 mean_table$n<-n
 yr <- inc_counts_peryear[['START_YEAR.X']]
-#lm<-lm(inc_counts_peryear$n~inc_counts_peryear$START_YEAR.X)
+
 
 ploop<-openair::TheilSen(mean_table,pollutant="n",date.format = "%Y",autocor=FALSE,shade="white",data.col="black",alpha=0.1,text.col="transparent",xlab = "Year",trend = list(lty = c(1, 5), lwd = c(2, 1), col = c("black", "blue")),plot=TRUE)#autocor=TRUE
 

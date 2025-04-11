@@ -34,7 +34,7 @@ library(Kendall)
 
 `%notin%` <- Negate(`%in%`)
 
-#if directories don't exist, make them
+#if directories for output files don't exist, make them
 #for created datasets
 ifelse(!dir.exists(file.path("data")), dir.create(file.path("data")), FALSE) 
 #for all analysis outputs 

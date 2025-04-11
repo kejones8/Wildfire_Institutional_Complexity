@@ -4,7 +4,7 @@
 
 incidents<-read.csv("data\\ica_jca_data.csv")
 
-
+#create additional vars
 incidents$VALS_AT_RISK<-incidents$STR_DAMAGED_TOTAL+incidents$STR_DESTROYED_TOTAL+incidents$STR_THREATENED_MAX
 incidents["VALS_AT_RISK"][is.na(incidents["VALS_AT_RISK"])] <- 0
 incidents$NPL_DAYS_4_5<-incidents$Days_PL4+incidents$Days_PL5
@@ -103,7 +103,7 @@ for (i in 1:length(gacc_names)){
     yr <- mean_table[['START_YEAR.X']]
     
     fit<-theilsen(mean ~ yr)
-
+    #summary stats from thielsen fitted model
     slope_openair <- round(ploop$data$main.data$slope[1],2)
     slope_up <- round(ploop$data$res2$upper[1],2)
     slope_low <- round(ploop$data$res2$lower[1],2)
@@ -127,7 +127,7 @@ for (i in 1:length(gacc_names)){
 }
 
 
-#have to do incident counts separately, no averaging
+#have to do incident counts separately, no averaging on counts per year / within gacc
 gaccs_0counts$START_YEAR.X<-as.numeric(gaccs_0counts$START_YEAR.X)
 
 var_names<-"INC_COUNT"

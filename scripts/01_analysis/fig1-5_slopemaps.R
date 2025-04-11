@@ -50,6 +50,8 @@ var_group_slopes$bottom4 <- var_group_slopes$top4*-1
 
 figure<-c("fig2a","fig3a","fig1b","fig4a","fig5a")
 
+#this loop iterates through variables and produce GACC maps of slope values for lower 48 states, AK, HI, + legend 
+
 for (i in 1:length(grouped_shapefile)){
 
   var_shp<-grouped_shapefile[[i]]
@@ -120,14 +122,12 @@ for (i in 1:length(grouped_shapefile)){
 
 
   ggsave(paste0(fig,"_hi.png"),p_hi,png(),"analysis_outputs\\maps\\",bg="transparent",dpi = 900)
-  #dev.copy(png,paste0("data\\analysis\\figures\\gacc_maps1\\",var_name,".png"))#,height = 4, width=4,units=c("in"),res=300)#, res=300, height=3.5, width=7.5, units=c("in"))
   dev.off()
 
 
   p2<-ggplot() +
     geom_sf(data = cropped,aes(fill=slope_num))+
     scale_fill_distiller(type = "div",limit=limit,palette = "BrBG",direction=-1)+
-    #name=plot_names[i]
     theme_void()+
     theme(legend.title= element_blank(),
           legend.key.height = unit(2, 'cm'),
@@ -155,7 +155,7 @@ for (i in 1:length(grouped_shapefile)){
 #make separate shapefile names
 shapefile_names<-names(grouped_shapefile)
 
-
+#write out GACC shapefile with slope values for each variable
 for (i in 1:length(grouped_shapefile)){
   grouped_shapefile[[i]]$slope_num<-as.numeric(grouped_shapefile[[i]]$slope)
   st_write(grouped_shapefile[[i]],paste0("analysis_outputs\\maps\\fig1-5_shapefiles\\",shapefile_names[i],".shp"),append=TRUE)
