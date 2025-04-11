@@ -8,8 +8,8 @@ This repository includes all code used to process and analyze data for the citat
 &nbsp;   
 &nbsp;   
 
-## Workflow & Scripts
-&nbsp;  
+### Workflow & Scripts
+ 
 1. In repo directory, create **_input_data_** folder. All necessary input data can be downloaded from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8).
    *Data stored in the Dryad repository are current as of Dec. 2023. Notes on data availability and source updates below.
 &nbsp;
@@ -18,28 +18,17 @@ This repository includes all code used to process and analyze data for the citat
    *Final figures were created using QGIS. At the top of the analysis scripts (within **_/01_analysis_**), notes are made about the process to recreate final maps with the outputs provided from this code.
 
 
-## Data Sourcing & Availability
+### Data Sourcing & Availability
 &nbsp;  
-Below are descriptions of where and how each dataset in the _input_data_ folder was acquired.
+Below are descriptions of where each dataset in the _input_data_ folder was acquired or generated.
 
-## Wildfire Incidents and Boundaries
-### All-Hazards (incident tabular data)
-The wildfire incident data were downloaded, [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3) (St. Denis et al., 2023). Select the ics209plus-wildfire.zip. The ics209-plug-wf_incidents_1999to2020.csv is used in [*scripts/01_definesample.R*](https://github.com/kejones8/Jurisdictional_Complexity/blob/main/workflow_scripts/01_definesample.R).
+## National_GACC_Current_20200226.shp
+Data found [here](https://data-nifc.opendata.arcgis.com/datasets/614ad98bdf834c92bf92c4f0fe197903_0/explore?location=3.336959%2C0.314277%2C3.02).
 
-### MTBS Fire Boundaries
-Downloaded, [here](https://www.mtbs.gov/direct-download) in July 2022. The mtbs_perims_DD.shp is used in [*scripts/02_getMTBSbounds.R*](https://github.com/kejones8/Jurisdictional_Complexity/blob/main/workflow_scripts/02_getMTBSbounds.R).
-&nbsp;  
-&nbsp;  
-&nbsp;  
-## Jurisdictional Spatial Data
-### WFDSS Data
-New version of data downloadable [here](https://data-nifc.opendata.arcgis.com/datasets/nifc::jurisdictional-unit-public/about). Data were projected and geometries cleaned using [data_processing/clean_WFDSS](https://github.com/kejones8/Jurisdictional_Complexity/blob/main/data_acquisition_processing/clean_WFDSS.R). Downloaded version may differ from manuscript.
+## ics209-plus-wf_incidents_1999to2020.csv & ics209-plus-wf_sitreps_1999to2020.csv
+The wildfire incident and situation report data were downloaded, [here]([https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504)) (St. Denis et al., 2023). Download the ics209plus-wildfire.zip. 
 
-### BLM Data
-File GDB downloaded [here](https://gbp-blm-egis.hub.arcgis.com/datasets/4ec898f8fb104ce4910932d02791563a/about). Unit districts were used. Downloaded version may differ from manuscript.
+## incids_mtbs_final.gpkg
 
-### BIA Data
-Original data downloaded [here](https://biamaps.doi.gov/index.html). This website is now closed; the redirect is to [this page](https://biamaps.geoplatform.gov/BIA-Opendata/), but the same data are not available for download. See [this static map](https://www.bia.gov/bia/ojs/districts) for the districts used.
 
-### State & County
-States downloaded [here](https://www2.census.gov/geo/tiger/TIGER2020/STATE/). Counties downloaded [here](https://www2.census.gov/geo/tiger/TIGER2020/COUNTY/).
+## raw_pl_data_2020.csv
