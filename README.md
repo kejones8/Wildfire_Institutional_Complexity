@@ -5,7 +5,8 @@ This repository includes all code used to process and analyze data for the citat
 **Nowell, B., Jones, K., McGovern, S.M. 2025. Changing wildfire complexity highlights the need for institutional adaptation. Nature Climate Change.**
 
 &nbsp;  
- 
+https://doi.org/10.5281/zenodo.15199351
+ &nbsp; 
 
 ## Workflow & Scripts
  
