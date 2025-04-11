@@ -10,23 +10,11 @@ This repository includes all code used to process and analyze data for the citat
 
 ## Workflow & Scripts
 
-Each dataset provided in the _input_data_ folder is required to run the scripts below. More info on their data availability and sourcing below. <br />
- **-- _input_data_** <br /> 
- * All necessary input data can be downloaded from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8)
+1. In repo directory, create **_input_data_** directory. All necessary input data can be downloaded from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8).
+   **Data in the Dryad repository were accessed as of Dec. 2023. Notes on data availability and sources below. 
+3. **run.R** calls all scripts needed to process the input data to reproduce figures and tables. Packages and versions specified.
+   *Final figures were created using QGIS. At the top of the analysis scripts (within **_/01_analysis_**), notes are made about the process to recreate final maps with the outputs provided from this code.
 
-&nbsp; 
-**--_scripts_**
-&nbsp;  
-  **--_00_data_processing_**
-  &nbsp; 
-  **--_01_analysis_**
-
-  
-    
-* Download wildfire incident data [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504). Data published in [_Scientific Data_ by St. Denis et al](https://www.nature.com/articles/s41597-023-01955-0#Sec32).
-* _01_getsample_allhazardsdata.R_ : Subsets all hazard wildfire incident data to Type 1 & 2 wildfires in our sample.
-* _02_combineICAvars.R_: Uses outputs from JCA repository and data provided through personal correspondence to prepare ICA variables.
-* 
 
 ## Data Sourcing & Availability
 &nbsp;  
