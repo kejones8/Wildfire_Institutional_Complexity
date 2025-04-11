@@ -74,7 +74,6 @@ for (i in 1:length(grouped_shapefile)){
 
   plot.new()
 
-
   p <- ggplot() +
     geom_sf(data = cropped,aes(fill=slope_num))+
     scale_fill_distiller(type = "div",limit=limit,name=plot_names[i],palette = "BrBG",direction=-1)+
@@ -142,6 +141,10 @@ for (i in 1:length(grouped_shapefile)){
   ggsave(paste0(fig,"_leg.png"),legend,png(),"analysis_outputs\\maps\\",bg="transparent",dpi = 900)
 
   dev.off()
+  
+  delfiles <- dir(pattern="Rplot*")
+  file.remove(delfiles)
+  
 }
 
 
@@ -158,7 +161,6 @@ for (i in 1:length(grouped_shapefile)){
 
 
 dev.off()
-
 
 
 

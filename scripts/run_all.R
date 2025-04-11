@@ -37,8 +37,17 @@ library(Kendall)
 
 `%notin%` <- Negate(`%in%`)
 
+#if directories don't exist, make them
+#for created datasets
+ifelse(!dir.exists(file.path("data")), dir.create(file.path("data")), FALSE) 
+#for all analysis outputs 
+ifelse(!dir.exists(file.path("analysis_outputs")), dir.create(file.path("analysis_outputs")), FALSE)
+ifelse(!dir.exists(file.path("analysis_outputs/maps")), dir.create(file.path("analysis_outputs/maps")), FALSE)
+ifelse(!dir.exists(file.path("analysis_outputs/maps/fig1-5_shapefiles")), dir.create(file.path("analysis_outputs/maps/fig1-5_shapefiles")), FALSE)
 
 
+
+#data processing
 source("scripts\\00_dataprocessing\\01_getsample_allhazardsdata.R")
 print("01_getsample_allhazardsdata.R done")
 source("scripts\\00_dataprocessing\\02a_prepping_PLdata.R")
@@ -48,6 +57,7 @@ print("02b_assignGACC.R done")
 source("scripts\\00_dataprocessing\\03_combineICAvars.R")
 print("03_combineICAvars.R done")
 
+#data analysis - figure & table creation
 source("scripts\\01_analysis\\fig1a_bargraph.R")
 print("fig1a_bargraph.R done")
 source("scripts\\01_analysis\\fig2-5c_bargraphs.R")
