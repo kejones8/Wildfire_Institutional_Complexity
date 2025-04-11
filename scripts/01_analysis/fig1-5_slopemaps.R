@@ -163,7 +163,8 @@ for (i in 1:length(grouped_shapefile)){
 dev.off()
 
 
-
+delfiles <- dir(pattern="Rplot*")
+file.remove(delfiles)
 
 
 
