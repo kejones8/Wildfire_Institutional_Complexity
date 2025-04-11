@@ -13,10 +13,11 @@ This repository includes all code used to process and analyze data for the citat
    *Data stored in the Dryad repository are current as of Dec. 2023. Notes on data availability and source updates below.
 &nbsp;
 &nbsp;   
-
+&nbsp;  
 
 3. **run.R** calls all scripts needed to process the input data to reproduce figures and tables. Packages and versions specified.
    *Final figures were created using QGIS. At the top of the analysis scripts (within **_/01_analysis_**), notes are made about the process to recreate final maps with the outputs provided from this code.
+&nbsp;
 &nbsp;
 &nbsp;  
 
