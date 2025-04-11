@@ -29,10 +29,11 @@ Information about where each dataset from the [Dryad data repository](https://do
   * Data found [here](https://data-nifc.opendata.arcgis.com/datasets/614ad98bdf834c92bf92c4f0fe197903_0/explore?location=3.336959%2C0.314277%2C3.02).
 
 ### ics209-plus-wf_incidents_1999to2020.csv & ics209-plus-wf_sitreps_1999to2020.csv
-  * The wildfire incident and situation report data were downloaded, [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504)(St. Denis et al., 2023). Download the ics209plus-wildfire.zip. 
+  * The wildfire incident and situation report data were downloaded, [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) (St. Denis et al., 2023). Download the ics209plus-wildfire.zip. 
 
 ### incids_mtbs_final.gpkg
-
+* Dataset is the final output from the [Jurisdictional Complexity github repository](https://github.com/kejones8/Jurisdictional_Complexity).
+* Repository for published manuscript: Jones, K., Vukomanovic, J.V., Nowell, B., McGovern, S.M. 2024. Mapping Wildfire Jurisdictional Complexity Reveals Opportunities for Regional Co-Management. Global Environmental Change 84, 102084. https://doi.org/10.1016/j.gloenvcha.2024.102804.  
 
 ### raw_pl_data_2020.csv
   * Data received March 2023 through personal communications with the National Interagency Fire Center. 
