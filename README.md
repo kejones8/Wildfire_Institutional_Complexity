@@ -12,7 +12,7 @@ This repository includes all code used to process and analyze data for the citat
 
 Each dataset provided in the _input_data_ folder is required to run the scripts below. More info on their data availability and sourcing below. <br />
  **-- _input_data_** <br /> 
- * All necessary input data can be downloaded from this Dryad data repository. [https://doi.org/10.5061/dryad.gxd2547z8]
+ * All necessary input data can be downloaded from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8)
 
 &nbsp; 
 **--_scripts_**
