@@ -1,4 +1,7 @@
 
+#this script generates the maps and legends for figures 2-5 and shapefiles
+#outputs produces here were then used to color match and create higher quality map layouts in QGIS
+#the top 5% incident locations are not included in the output maps created here - see fig2-5c_bargraphs.R .csv outputs for those incident locations
 
 
 

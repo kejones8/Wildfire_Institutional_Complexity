@@ -1,6 +1,7 @@
 
-
-
+#this scripts generates the bargraph for figure 1a 
+#the map in figure 1a is not included here. It was generated in QGIS using the POO_LATITUDE, POO_LONGITUDE for each incident (where available)
+#the incident locations are then color-coded by year following the hex codes listed below for the barchart
 
 ##read in the incident table
 incidents_raw<-read.csv("data\\ica_jca_data.csv")

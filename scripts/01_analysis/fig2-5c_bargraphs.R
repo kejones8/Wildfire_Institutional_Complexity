@@ -1,5 +1,7 @@
 
-
+#this script produces the top5% barplots in figures 2-5
+#it also write out .csvs for the locations of the top 5% incidents for each variable
+#these .csvs (using POO_LATITUDE, POO_LONGITUDE, and START_YEAR.x) were used to overlay and color the incident locations in QGIS
 
 
 ##read in the incident table

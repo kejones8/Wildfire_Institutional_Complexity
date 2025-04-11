@@ -1,6 +1,6 @@
+#this script generates table A3
+#the outputs of which are needed to build the slope maps
 
-
-##read in the incident table
 
 incidents<-read.csv("data\\ica_jca_data.csv")
 

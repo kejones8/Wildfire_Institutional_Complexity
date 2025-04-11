@@ -1,10 +1,7 @@
 
 #R. Version 4.2.1
 
-#install necessary packages
-
 #packages, version used
-
 # install.packages("reshape")#0.8.9
 # install.packages("stringr")#1.5.1
 # install.packages("anytime")# 0.3.9

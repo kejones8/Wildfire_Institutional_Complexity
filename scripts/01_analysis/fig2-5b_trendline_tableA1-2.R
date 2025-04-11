@@ -1,3 +1,5 @@
+#this script generates the scatterplots and thielsen trendlines and 'confidence' metrics for figures 2-5 & tables A1-2
+
 
 
 #read in up to date incident table
