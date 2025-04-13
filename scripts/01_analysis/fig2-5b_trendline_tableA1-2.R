@@ -206,6 +206,7 @@ int_low <- int_low_70-(slope_low*1970)
 res <- residuals(fit)
 mae <- round(median(abs(res)),2)
 
+min <- min(inc_counts_peryear$n)
 max <- max(inc_counts_peryear$n)
 mean <- round(mean(inc_counts_peryear$n),3)
 std <- round(sd(inc_counts_peryear$n),3)
