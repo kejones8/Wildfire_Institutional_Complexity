@@ -1,5 +1,5 @@
 # Wildfire Institutional Complexity
-This repository includes all code used to process and analyze data for the citation below.
+This repository includes all code and links to datasets used for the citation below.
 ## Citation (DOI pending) 
 
 **Nowell, B., Jones, K., McGovern, S.M. 2025. Changing wildfire complexity highlights the need for institutional adaptation. Nature Climate Change.**
