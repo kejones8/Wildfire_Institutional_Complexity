@@ -27,7 +27,7 @@ table_list<-list(incidents_subset)
 
 #create the dataframe we'll store all of the table values in 
 samp_var_slopes<-data.frame(matrix(NA, nrow = 5, ncol = 10))
-colnames(samp_var_slopes)<-c("n","variable","slope","mean_abs_error","mean","max","min","std_dev","slope_90CI_upper","slope_90CI_lower")
+colnames(samp_var_slopes)<-c("n","variable","slope","median_abs_error","mean","max","min","std_dev","slope_90CI_upper","slope_90CI_lower")
 #axes values & file names to iterate through
 figure<-c("fig2b_trendline","fig3b_trendline","fig4b_trendline","fig5b_trendline")
 yax_names<-c("Square Kilometers", "Engaged Jurisdictions","Number of Structures", "Days")
