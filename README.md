@@ -18,8 +18,18 @@ https://doi.org/10.5281/zenodo.15199351
    * Data stored in the Dryad repository are current as of Dec. 2023. Notes on data availability and source updates below. 
 &nbsp;
 &nbsp;   
-&nbsp;  
-3. **run.R** calls all scripts needed to process the input data to reproduce figures and tables. Packages and versions specified.
+&nbsp;
+3. Download the .csvs below from [St. Denis et al, 2023](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) and place in *_input_data_* folder. (You will need to download the ics209plus-wildfire.zip, as you cannot download individual .csvs.)
+
+*ics209-plus-wf_sitreps_1999to2020.csv
+
+*ics209-plus-wf_incidents_1999to2020.csv
+
+&nbsp;
+&nbsp;   
+&nbsp;
+
+4. **run.R** calls all scripts needed to process the input data to reproduce figures and tables. Packages and versions specified.
    * Final figures were created using QGIS. At the top of the analysis scripts (within **_/01_analysis_**), the necessary steps are documented to recreate final maps with the outputs provided from this code.
 &nbsp;
 &nbsp;
