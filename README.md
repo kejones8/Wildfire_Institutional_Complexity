@@ -14,12 +14,11 @@ https://doi.org/10.5281/zenodo.15199351
 &nbsp;
 &nbsp;   
 &nbsp;  
-3. In repo directory, create **_input_data_** folder. Download input data from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8) and place in *_input_data_* folder. This is necessary to successfully run the code. 
-   *  Notes on data availability and source updates below. 
+2. In repo directory, create **_input_data_** folder. Download some of the input data from this [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8) and place in the *_input_data_* folder. 
 &nbsp;
 &nbsp;   
 &nbsp;
-3. Download the .csvs below from [St. Denis et al, 2023](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) and place only the .csvs in the *_input_data_* folder. (You will need to download the *_ics209plus-wildfire.zip_*, as you cannot download individual .csvs.)
+3. Download the .csvs specified below from [St. Denis et al, 2023](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) and place only the .csvs in the *_input_data_* folder. (You will need to download the *_ics209plus-wildfire.zip_*, as you cannot download individual .csvs.)
 
   * ics209-plus-wf_sitreps_1999to2020.csv
 
