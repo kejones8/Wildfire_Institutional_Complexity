@@ -24,11 +24,9 @@ https://doi.org/10.5281/zenodo.15199351
   * ics209-plus-wf_sitreps_1999to2020.csv
 
   * ics209-plus-wf_incidents_1999to2020.csv
-
 &nbsp;
 &nbsp;   
 &nbsp;
-
 4. **run.R** calls all scripts needed to process the input data to reproduce figures and tables. Packages and versions specified.
    * Final figures were created using QGIS. At the top of the analysis scripts (within **_/01_analysis_**), the necessary steps are documented to recreate final maps with the outputs provided from this code.
 &nbsp;
