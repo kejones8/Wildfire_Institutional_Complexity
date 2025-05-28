@@ -35,14 +35,13 @@ https://doi.org/10.5281/zenodo.15199351
 
 ## Data Sourcing & Availability
 &nbsp;  
-Information about where each dataset from the [Dryad data repository](https://doi.org/10.5061/dryad.gxd2547z8) was generated or acquired.
+Information about where each dataset was generated or acquired.
 
 ### National_GACC_Current_20200226.shp
   * Data found [here](https://data-nifc.opendata.arcgis.com/datasets/614ad98bdf834c92bf92c4f0fe197903_0/explore?location=3.336959%2C0.314277%2C3.02).
 
 ### ics209-plus-wf_incidents_1999to2020.csv & ics209-plus-wf_sitreps_1999to2020.csv
-  * The wildfire incident and situation report data were downloaded, [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) (St. Denis et al., 2023). Download the 
-    ics209plus-wildfire.zip. 
+  * The wildfire incident and situation report data were downloaded, [here](https://figshare.com/articles/dataset/All-hazards_dataset_mined_from_the_US_National_Incident_Management_System_1999-2020/19858927/3?file=38766504) (St. Denis et al., 2023). Download the ics209plus-wildfire.zip. 
 
 ### incids_mtbs_final.gpkg
 * Dataset is the final output from the [Jurisdictional Complexity github repository](https://github.com/kejones8/Jurisdictional_Complexity). Review repository .README for additional data availability.
